@@ -30,15 +30,16 @@ BEGIN
 
     process
     begin
+        x0 <= '0'; x1 <= '0';
         wait for 75 ns;
         x0 <= '0'; x1 <= '0';
-        wait for 50 ns;
+        wait for 100 ns;
         x0 <= '0'; x1 <= '1';
-        wait for 50 ns;
+        wait for 100 ns;
         x0 <= '1'; x1 <= '0';
-        wait for 50 ns;
+        wait for 100 ns;
         x0 <= '1'; x1 <= '0';
-        wait for 50 ns;
+        wait for 100 ns;
         wait;
     end process;
 END state_machine3_test_bench;
